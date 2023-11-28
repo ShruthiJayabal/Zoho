@@ -6,7 +6,7 @@
     <title>Zoho-like Website</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -15,11 +15,21 @@
 
         h1{
             font-family: Arial, Helvetica, sans-serif;
-            
+            font:lighter;
+            font-size: 50px;
         }
 
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font:lighter;  
+        }
+        
+        h5{
+            color:rgb(23, 136, 206);
+        }
+    
         header {
-            background-color: #0675C1;
+            background-color: #0768a9;
             color: #fff;
             padding: 15px;
             text-align: center;
@@ -30,8 +40,8 @@
             justify-content: space-between;
             color:black;
             background-color:white;
-            color:black;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
             padding: 30px;
         }
 
@@ -39,11 +49,29 @@
             color: black;
             text-decoration: none;
             margin: 0 10px;
+            
         }
 
         main {
             padding: 40px;
             background-color: lightgrey;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color:lightgrey;
+        }
+
+        .right-box {
+            width: 350px;
+            padding: 30px;
+            justify-content: space ;
+            background-color: white;
         }
 
         footer {
@@ -68,14 +96,15 @@
    
     <div class="navbar">
         <nav class="left-navbar">
-            <img src="zoho_logo.jpg" alt="Your Logo">
+            <img class="logo" src="D:\Spotknack\Zoho\assets\images\zoho_logo.jpg" alt="logo">
             <a href="products.html">Products </a>
             <a href="customers.html">Customers</a>  
             <a href="comapany.html">Company</a>  
+            <a href="more.html">...</a>
         </nav>
 
-        <nav class="right-navbar">
-            <img src="countries.jpg" alt="country">
+        <nav class="right-navbar"><br>
+            <img src="D:\Spotknack\Zoho\assets\images\countries.png">
             <a href="countries.html">EN</a>
             <a href="sign_in.html">Sign in</a>
             <a href="sign_up.html">Sign up</a> 
@@ -85,21 +114,43 @@
     
 
     <main>
-        <h1> Your life's work,</h1>
-        <h1> powered by our life's work</h1>
-        <br>
-        <p>A unique and powerful software suite to </p>
-        <p>transform the way you work. Designed for </p>
-        <p>businesses of all sizes, built by a comapany </p>
-        <p>that values your privacy. </p>
-        <button type="button" > GET STARTED FOR FREE &nbsp; > </button>
-
+        <div class="container">
+            <div class="content">
+                <h1> Your life's work,</h1>
+                <h1> powered by our life's work</h1>
+                <br>
+                <p>A unique and powerful software suite to transform the</p3>
+                <p>way you work. Designed for businesses of all sizes, built </p>
+                <p> by a comapany that values your privacy.</p>
+                <br>
+                <button type="button" > GET STARTED FOR FREE &nbsp; > </button>
+            </div>
+            <div class="right-box">
+                <p>FEATURED APPS</p>
+                <h2> <img align:left src="D:\Spotknack\Zoho\assets\images\crm.png"> CRM</h2>
+                <p>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Convert leads and close sales &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;deals faster. </p>
         
+                <h2> <img src="D:\Spotknack\Zoho\assets\images\books.png">&nbsp; Books</h2> 
+                <p>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Powerful financial platform for &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  growing businesses. </p>
+               
+                <h2> <img src="D:\Spotknack\Zoho\assets\images\mail.png"> &nbsp; Mail</h2> 
+                <p>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Secure email service for your &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; business. </p>
+
+                
+                <h2> <img src="D:\Spotknack\Zoho\assets\images\people.png"> &nbsp;People</h2> 
+                <p>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Organize, automate, and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; > &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;simplify your HR processes. </p>
+                
+                <h2> <img src="D:\Spotknack\Zoho\assets\images\desk.png"> &nbsp;Desk</h2> 
+                <p>  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Helpdesk software to deliver &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; great customer support. </p>  
+                <br>
+                <br>
+                <h5> EXPLORE ALL PRODUCTS &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ></h5>
+
+            </div>
+        </div> 
     </main>
 
-    <footer>
-        &copy; 2023 Zoho-like Website
-    </footer>
+    
 
 </body>
 </html>
